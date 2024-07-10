@@ -8,3 +8,9 @@ resource "azurerm_virtual_wan" "vwan" {
   type = var.vwan_type
   tags = var.tags
 }
+provider "azurerm" {
+  features {}
+}
+provider "azurerm" {
+  features {}
+}
