@@ -1,3 +1,7 @@
+provider "azurerm" {
+  features {}
+}
+
 resource "azurerm_virtual_wan" "vwan" {
   name                = var.vwan_name
   resource_group_name = var.resource_group_name
@@ -8,9 +12,5 @@ resource "azurerm_virtual_wan" "vwan" {
   type = var.vwan_type
   tags = var.tags
 }
-provider "azurerm" {
-  features {}
-}
-provider "azurerm" {
-  features {}
-}
+
+
